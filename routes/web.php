@@ -2,9 +2,7 @@
 
 use App\Http\Controllers\CancelController;
 use App\Http\Controllers\CompleteController;
-use App\Http\Controllers\DestroyController;
 use App\Http\Controllers\MovementController;
-use App\Http\Controllers\MovementFilterController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ResumeController;
 use App\Http\Controllers\ShowController;
@@ -12,6 +10,7 @@ use App\Http\Controllers\StoreController;
 use App\Http\Controllers\CreateController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\UpdateController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\WarehouseController;
 use Illuminate\Support\Facades\Route;
 
@@ -43,5 +42,10 @@ Route::put('/orders/{order}/cancel', CancelController::class);
 Route::put('/orders/{order}/resume ', ResumeController::class);
 //Route::put('/orders/{order}', DestroyController::class)->name('destroy');
 Route::match(['get' , 'post'],'/orders/movement/history', MovementController::class);
+
+
+
+Route::get('/user', [UserController::class, 'login']);
+
 
 

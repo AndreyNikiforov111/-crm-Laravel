@@ -18,9 +18,6 @@ class Kernel extends ConsoleKernel
     /**
      * Register the commands for the application.
      */
-    protected $commands = [
-        \App\Console\Commands\StartCommand::class,
-    ];
     protected function commands(): void
     {
 

@@ -40,3 +40,14 @@ tr{
     gap: 15px;
     flex-direction: column;
 }
+.course{
+    margin: 0 auto;
+    padding: 10px;
+    background: #637db6;
+    border-radius: 4px;
+    width: fit-content;
+}
+.course_link{
+    /*text-decoration: none;*/
+    color: #ffffff;
+}

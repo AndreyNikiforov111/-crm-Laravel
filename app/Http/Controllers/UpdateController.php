@@ -7,7 +7,7 @@ use App\Models\Order;
 use App\Models\Order_item;
 use App\Models\Product;
 use App\Models\Stock;
-use App\services\Service;
+use App\Services\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;

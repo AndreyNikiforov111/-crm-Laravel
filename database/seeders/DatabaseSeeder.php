@@ -5,9 +5,9 @@ namespace Database\Seeders;
 use App\Models\Order;
 use App\Models\Order_item;
 use App\Models\Product;
-
+use App\Models\Course;
 use App\Models\Stock;
-use App\Models\warehouse;
+use App\Models\Warehouse;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -20,11 +20,12 @@ class DatabaseSeeder extends Seeder
     {
 
 
-        warehouse::factory(10)->create();
+        Warehouse::factory(10)->create();
         product::factory(10)->create();
         stock::factory(10)->create();
         Order::factory(50)->create();
         Order_item::factory(250)->create();
+        Course::factory(1)->create();
 
 
         $update = "

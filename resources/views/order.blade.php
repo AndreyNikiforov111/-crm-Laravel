@@ -1,6 +1,10 @@
 @extends('layouts/app')
 
 @section('content')
+    <div class="course">
+        Курс USD = {{$course}} RUB<br>
+        <p>От сайта <a class="course_link" href="https://currencylayer.com/">Currencylayer</a></p>
+    </div>
     <div class="form-filter">
 
     <form action="" id="filter">
